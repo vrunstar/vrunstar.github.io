@@ -417,7 +417,10 @@ a { color: inherit; text-decoration: none; }
   margin-top: 8px;
 }
 
-.stack-tag {
+.project-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 50%;
+}
   padding: 3px 8px;
   background: var(--border);
   border-radius: 2px;
