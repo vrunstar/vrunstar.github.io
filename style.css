@@ -367,18 +367,26 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent-dim);
 }
 
-.project-meta {
+.project-header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4px;
+  gap: 16px;
 }
 
-
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--text);
+  line-height: 1.1;
+  flex: 1;
+}
 
 .project-links {
   display: flex;
   gap: 16px;
+  flex-shrink: 0;
+  padding-top: 4px;
 }
 
 .project-links a {
@@ -390,13 +398,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .project-links a:hover { color: var(--text); }
-
-.project-title {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  color: var(--text);
-  line-height: 1.1;
-}
 
 .project-desc {
   font-size: 0.875rem;
