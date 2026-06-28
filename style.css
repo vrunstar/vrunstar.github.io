@@ -488,3 +488,121 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.05em;
   white-space: nowrap;
 }
+
+/* ── HERO TWO-COLUMN ── */
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-left { display: flex; flex-direction: column; }
+.hero-right { display: flex; align-items: center; justify-content: center; }
+
+/* ── TERMINAL ── */
+.terminal {
+  width: 100%;
+  max-width: 480px;
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+}
+
+.terminal-bar {
+  background: #1a1a1a;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.t-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.t-red    { background: #ff5f57; }
+.t-yellow { background: #febc2e; }
+.t-green  { background: #28c840; }
+
+.t-title {
+  margin-left: 8px;
+  color: #555;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+.terminal-body {
+  padding: 16px 20px;
+  min-height: 280px;
+  max-height: 340px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #2a2a2a transparent;
+}
+
+.t-line {
+  display: flex;
+  gap: 8px;
+  color: #f0ede6;
+}
+
+.t-prompt {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.t-cmd { color: #f0ede6; }
+
+.t-output {
+  color: #6b6b6b;
+  line-height: 1.8;
+  padding-left: 18px;
+  white-space: pre-wrap;
+}
+
+.t-accent { color: var(--accent); }
+.t-link   { color: #60a5fa; text-decoration: underline; cursor: pointer; }
+.t-error  { color: #f87171; }
+.t-success{ color: #28c840; }
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px 14px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f0ede6;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  caret-color: var(--accent);
+}
+
+.terminal-input::placeholder { color: #333; }
+
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-right { display: none; }
+}

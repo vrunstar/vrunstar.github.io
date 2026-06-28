@@ -27,30 +27,56 @@
   <!-- ── HERO ── -->
   <section id="hero" class="section">
     <div class="hero-inner">
-      <p class="hero-eyebrow">Final-year CS @ Parul University</p>
-      <h1 class="hero-name">Varun<br>Shakya</h1>
-      <p class="hero-line">
-        I build things that <em>run</em> —<br>
-        ML pipelines, dashboards, and data apps.
-      </p>
-      <div class="hero-cta">
-        <a href="https://github.com/vrunstar" target="_blank" class="btn btn-primary">GitHub</a>
-        <a href="mailto:varunshakya1794@gmail.com" class="btn btn-ghost">Get in touch</a>
+      <div class="hero-left">
+        <p class="hero-eyebrow">Final-year CS @ Parul University</p>
+        <h1 class="hero-name">Varun<br>Shakya</h1>
+        <p class="hero-line">
+          I build things that <em>run</em> —<br>
+          ML pipelines, dashboards, and data apps.
+        </p>
+        <div class="hero-cta">
+          <a href="https://github.com/vrunstar" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="mailto:varunshakya1794@gmail.com" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Deployed apps</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">25K+</span>
+            <span class="stat-label">Matches modelled</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">225+</span>
+            <span class="stat-label">LeetCode problems</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">6</span>
-          <span class="stat-label">Deployed apps</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">25K+</span>
-          <span class="stat-label">Matches modelled</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">225+</span>
-          <span class="stat-label">LeetCode problems</span>
+
+      <div class="hero-right">
+        <div class="terminal" id="terminal">
+          <div class="terminal-bar">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+            <span class="t-title">varun@portfolio ~ </span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div class="t-line"><span class="t-prompt">→</span> <span class="t-cmd">help</span></div>
+            <div class="t-output">Available commands:
+  <span class="t-accent">whoami</span>      — about me
+  <span class="t-accent">skills</span>      — tech stack
+  <span class="t-accent">projects</span>    — what I built
+  <span class="t-accent">contact</span>     — reach me
+  <span class="t-accent">clear</span>       — clear terminal</div>
+          </div>
+          <div class="terminal-input-row">
+            <span class="t-prompt">→</span>
+            <input id="terminal-input" class="terminal-input" type="text" autocomplete="off" spellcheck="false" placeholder="type a command..." autofocus />
+          </div>
         </div>
       </div>
     </div>
